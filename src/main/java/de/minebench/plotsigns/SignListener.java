@@ -80,7 +80,7 @@ public class SignListener implements Listener {
             event.setCancelled(true);
 
             if (!event.getPlayer().hasPermission("plotsigns.sign.purchase")) {
-                event.getPlayer().sendMessage("buy.no-permission");
+                event.getPlayer().sendMessage(plugin.getLang("buy.no-permission"));
                 return;
             }
 
